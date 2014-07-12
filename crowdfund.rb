@@ -1,11 +1,17 @@
-projects = ['Project ABC','Project LMN','Project XYZ']
+project1 = 'Project ABC'
+project2 = 'Project LMN'
+project3 = 'Project XYZ'
+funding1 = 1000
+funding2 = 500
+funding3 = 25
 
-fundingProject1 = 1000
+puts "#{project1} has $#{funding1} in funding."
+puts "#{project1.capitalize} has $#{funding1} in funding."
+puts "#{project2.upcase} has $#{funding2} in funding."
+puts "#{project3.ljust(30, '.')} $#{funding3} in funding."
 
+puts "Projects: \n\t#{project1}\n\t#{project2}\n\t#{project3}"
 
-puts "Projects have a total funding of #{fundingProject1}"
-
-puts "Projects:"
-projects.each do |project|
-puts "\n\t#{project}"
-end
+current_time = Time.new
+formatted_time = current_time.strftime("%A %m/%d/%Y at %I:%M%p")
+puts "Funding amounts as of #{formatted_time}."
